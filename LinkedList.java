@@ -12,7 +12,7 @@ public class LinkedList {
  
     Node head = null;
     Node tail = null;
- 
+
 public void addNode(int data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -47,17 +47,17 @@ sc.close();
 public void deleteEnd()
     {
        if(head == null)
-       {
+       
         System.out.println("List is Empty");
        
-       }
+       
        else if(head.next ==null)
        
         head  = null;
     else{
        
        Node temp = head;
-       Node prev = null;
+       Node prev = head;
       while(temp.next.next != null)
       {
         prev = prev.next;
@@ -69,6 +69,7 @@ public void deleteEnd()
     }
     
     }
+
 public void displayList() {
         Node current = head;
         while (current != null) {
@@ -78,3 +79,4 @@ public void displayList() {
 System.out.println("null");
     }
  }
+ 
